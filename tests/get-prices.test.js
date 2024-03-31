@@ -91,11 +91,11 @@ describe('getPrices', () => {
     const modelsPrices = await getPrices('groq', { models, embedding_models, content: pricingPage_groq })
     const expectedPrices = {
       models: {
-        "llama 2 70B": {
+        "llama-2-70b": {
           input_per_million: 0.7,
           output_per_million: 0.8,
         },
-        "llama 2 7B": {
+        "llama-2-7b": {
           input_per_million: 0.1,
           output_per_million: 0.1,
         },
@@ -103,11 +103,11 @@ describe('getPrices', () => {
           input_per_million: 0.27,
           output_per_million: 0.27,
         },
-        "gemma 7B": {
+        "gemma-7b": {
           input_per_million: 0.1,
           output_per_million: 0.1,
         },
-      }
+      },
     }
     for (const [model, prices] of Object.entries(expectedPrices.models)) {
       expect(modelsPrices.models[model]).toEqual(prices)
