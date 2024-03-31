@@ -1,15 +1,51 @@
 {
   "openai": {
     "pricing_page": "https://openai.com/pricing",
-    "last_checked_at": "2022-03-01T00:00:00Z",
+    "last_checked_at": "2024-03-31T23:48:17.819Z",
     "models": {
       "gpt-4-0125-preview": {
-        "input_per_million": 10.0,
-        "output_per_million": 30.0
+        "input_per_million": 10,
+        "output_per_million": 30
+      },
+      "gpt-4-1106-preview": {
+        "input_per_million": 10,
+        "output_per_million": 30
+      },
+      "gpt-4-1106-vision-preview": {
+        "input_per_million": 10,
+        "output_per_million": 30
       },
       "gpt-4": {
-        "input_per_million": 30.0,
-        "output_per_million": 60.0
+        "input_per_million": 30,
+        "output_per_million": 60
+      },
+      "gpt-4-32k": {
+        "input_per_million": 60,
+        "output_per_million": 120
+      },
+      "gpt-3.5-turbo-0125": {
+        "input_per_million": 0.5,
+        "output_per_million": 1.5
+      },
+      "gpt-3.5-turbo-instruct": {
+        "input_per_million": 1.5,
+        "output_per_million": 2
+      },
+      "gpt-3.5-turbo-1106": {
+        "input_per_million": 1,
+        "output_per_million": 2
+      },
+      "gpt-3.5-turbo-0613": {
+        "input_per_million": 1.5,
+        "output_per_million": 2
+      },
+      "gpt-3.5-turbo-16k-0613": {
+        "input_per_million": 3,
+        "output_per_million": 4
+      },
+      "gpt-3.5-turbo-0301": {
+        "input_per_million": 1.5,
+        "embedding_models": 2
       }
     },
     "embedding_models": {
@@ -23,40 +59,60 @@
   },
   "groq": {
     "pricing_page": "https://wow.groq.com",
-    "last_checked_at": "2022-03-01T00:00:00Z",
+    "last_checked_at": "2024-03-31T23:48:22.986Z",
     "models": {
+      "llama-2-70b": {
+        "input_per_million": 0.7,
+        "output_per_million": 0.8
+      },
+      "llama-2-7b": {
+        "input_per_million": 0.1,
+        "output_per_million": 0.1
+      },
       "mixtral-8x7b": {
         "input_per_million": 0.27,
         "output_per_million": 0.27
+      },
+      "gemma-7b": {
+        "input_per_million": 0.1,
+        "output_per_million": 0.1
       }
     }
   },
   "anthropic": {
     "pricing_page": "https://www.anthropic.com/api",
-    "last_checked_at": "2022-03-01T00:00:00Z",
+    "last_checked_at": "2024-03-31T23:48:29.276Z",
     "models": {
       "haiku": {
         "input_per_million": 0.25,
         "output_per_million": 1.25
       },
       "sonnet": {
-        "input_per_million": 3.0,
-        "output_per_million": 15.0
+        "input_per_million": 3,
+        "output_per_million": 15
       },
       "opus": {
-        "input_per_million": 15.0,
-        "output_per_million": 75.0
+        "input_per_million": 15,
+        "output_per_million": 75
+      },
+      "claude_2.1": {
+        "input_per_million": 8,
+        "output_per_million": 24
+      },
+      "claude_2.0": {
+        "input_per_million": 8,
+        "output_per_million": 24
+      },
+      "claude_instant": {
+        "input_per_million": 0.8,
+        "output_per_million": 2.4
       }
     }
   },
   "mistral": {
     "pricing_page": "https://docs.mistral.ai/platform/pricing/",
-    "last_checked_at": "2022-03-01T00:00:00Z",
+    "last_checked_at": "2024-03-31T23:48:38.857Z",
     "models": {
-      "mistral-embed": {
-        "input_per_million": 0.1,
-        "output_per_million": 0.1
-      },
       "open-mistral-7b": {
         "input_per_million": 0.25,
         "output_per_million": 0.25
@@ -66,16 +122,16 @@
         "output_per_million": 0.7
       },
       "mistral-small-latest": {
-        "input_per_million": 2.0,
-        "output_per_million": 6.0
+        "input_per_million": 2,
+        "output_per_million": 6
       },
       "mistral-medium-latest": {
         "input_per_million": 2.7,
         "output_per_million": 8.1
       },
       "mistral-large-latest": {
-        "input_per_million": 8.0,
-        "output_per_million": 24.0
+        "input_per_million": 8,
+        "output_per_million": 24
       }
     },
     "embedding_models": {
