@@ -2,7 +2,7 @@ export default async function getPrices(provider, { models, embedding_models = {
   const prompt = `
 You are text parser for LLM pricing page. Parse model prices from the given text.
 The models are from ${provider}.
-Return the output in raw JSON (without backticks). Example:
+Return the output in raw JSON (without backticks). Format the prices in decimal. Example:
 
 ${JSON.stringify({ models, embedding_models }, null, 2)}
 `.trim()
@@ -25,5 +25,7 @@ ${JSON.stringify({ models, embedding_models }, null, 2)}
     })
   }).then(res => res.json())
 
-  return JSON.parse(response.choices[0].message.content)
+  const result = JSON.parse(response.choices[0].message.content)
+
+  return result
 }

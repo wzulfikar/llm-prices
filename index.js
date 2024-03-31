@@ -16,6 +16,9 @@ bun ./index.js
 
     llmPrices[provider].last_checked_at = new Date().toISOString()
     llmPrices[provider].models = modelsPrices.models
+    if (modelsPrices.embedding_models) {
+      llmPrices[provider].embedding_models = modelsPrices.embedding_models
+    }
 
     if (process.env.UPDATE_FIXTURES) {
       require('fs').writeFileSync(`./fixtures/pricing-page-${provider}.json`, `export const pricingPage_${provider} = \`\n${content}\n\``)
