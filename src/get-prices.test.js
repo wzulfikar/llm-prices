@@ -1,9 +1,9 @@
-import getPrices from '../get-prices';
+import getPrices from './get-prices';
 import llmPrices from '../llm-prices.json';
-import { pricingPage_openai } from './fixtures/pricing-page-openai';
-import { pricingPage_anthropic } from './fixtures/pricing-page-anthropic';
-import { pricingPage_groq } from './fixtures/pricing-page-groq';
-import { pricingPage_mistral } from './fixtures/pricing-page-mistral';
+import { pricingPage_openai } from '../fixtures/pricing-page-openai';
+import { pricingPage_anthropic } from '../fixtures/pricing-page-anthropic';
+import { pricingPage_groq } from '../fixtures/pricing-page-groq';
+import { pricingPage_mistral } from '../fixtures/pricing-page-mistral';
 
 /*
 usage:

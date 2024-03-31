@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { htmlToText } from 'html-to-text';
-import getPrices from './get-prices.js'
+import getPrices from './src/get-prices.js'
 import llmPrices from './llm-prices.json';
 
 /*
@@ -18,7 +18,7 @@ bun ./index.js
     llmPrices[provider].models = modelsPrices.models
 
     if (process.env.UPDATE_FIXTURES) {
-      require('fs').writeFileSync(`./pricing-page-${provider}.json`, `export const pricingPage_${provider} = \`\n${content}\n\``)
+      require('fs').writeFileSync(`./fixtures/pricing-page-${provider}.json`, `export const pricingPage_${provider} = \`\n${content}\n\``)
     }
   }
   fs.writeFileSync('./llm-prices.json', JSON.stringify(llmPrices, null, 2))
