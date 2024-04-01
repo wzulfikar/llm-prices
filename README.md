@@ -6,7 +6,7 @@ TODO:
 
 ## Usage
 
-- Get prices: `bun ./index.js`
+- Get prices: `OPENAI_API_KEY=some-value bun ./index.js`
 - Show prices: `bun ./show-prices.js`
 
-  ![show-prices](./screenshots/show-prices.png)
+  <img width=450 src=./screenshots/show-prices.png />
