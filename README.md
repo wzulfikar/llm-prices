@@ -7,3 +7,10 @@ Get the JSON here: https://raw.githubusercontent.com/wzulfikar/llm-prices/main/l
 - Show prices: `bun ./show-prices.js`
 
   <img width=450 src=./screenshots/show-prices.png />
+
+
+---
+
+### Similar projects
+
+- LLM prices in CSV: https://github.com/psimm/website/blob/master/blog/llm-price-performance/data.csv
